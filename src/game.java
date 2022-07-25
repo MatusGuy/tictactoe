@@ -7,7 +7,7 @@ import classes.*;
 public class game {
     static final Scanner input = new Scanner(System.in);
 
-    static final Grid grid = new Grid(9);
+    static final Grid grid = new Grid(3);
     static Player player;
     static Player opponent;
     static Player turn;
@@ -21,10 +21,10 @@ public class game {
         System.out.println("Welcome to Tic-Tac-Toe! Press Ctrl-C to quit.");
         
         try {
-            player = new CPU('£',grid);
-            //player = new Player(ask("Enter Player 1's name"), 'X', grid);
+            //player = new CPU('X',grid);
+            player = new Player(ask("Enter Player 1's name"), 'X', grid);
             //opponent = new Player(ask("Enter Player 2's name"), 'O', grid);
-            opponent = new CPU('$',grid);
+            opponent = new CPU('O',grid);
             turn = player;
 
             while (true) {

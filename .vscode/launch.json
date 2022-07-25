@@ -17,7 +17,7 @@
             "cwd": "${workspaceFolder}\\src\\",
             "mainClass": "game",
             "console": "externalTerminal",
-            "projectName": "tictactoe_c493ff0f"
+            "projectName": "tictactoe"
         }
     ]
 }
