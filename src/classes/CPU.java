@@ -189,8 +189,8 @@ public class CPU extends Player {
 
         Move resp = null;
         while (resp == null || resp.cancelled) {
-            int x = getRandomNumber(0, gridsize);
-            int y = getRandomNumber(0, gridsize);
+            int x = getRandomNumber(0, gridsize+1);
+            int y = getRandomNumber(0, gridsize+1);
             resp = set(new Coordinates(x,y));
         }
         return resp;
